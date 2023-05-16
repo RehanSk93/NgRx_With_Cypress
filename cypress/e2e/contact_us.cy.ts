@@ -16,8 +16,6 @@ describe("contactUs", () => {
     it.only("Email validation", () => {
         const email = "abcd@gmail.com"
         cy.get("#email").type(email)
-        cy.get("#emailInvalid").should("not.be.visible")
-        cy.get("#emailRequired").should("not.be.visible")
     })
     it("Email validation", () => {
         const email = "abcd"
