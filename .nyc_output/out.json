@@ -1,0 +1,191 @@
+{
+  "D:/Work Place/NgRx-Demo-App/cypress.config.ts": {
+    "path": "D:/Work Place/NgRx-Demo-App/cypress.config.ts",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "D:/Work Place/NgRx-Demo-App/src/app/app.component.ts": {
+    "path": "D:/Work Place/NgRx-Demo-App/src/app/app.component.ts",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "D:/Work Place/NgRx-Demo-App/src/app/app.module.ts": {
+    "path": "D:/Work Place/NgRx-Demo-App/src/app/app.module.ts",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "D:/Work Place/NgRx-Demo-App/src/app/components/app-routing.module.ts": {
+    "path": "D:/Work Place/NgRx-Demo-App/src/app/components/app-routing.module.ts",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "D:/Work Place/NgRx-Demo-App/src/app/models/user.ts": {
+    "path": "D:/Work Place/NgRx-Demo-App/src/app/models/user.ts",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "D:/Work Place/NgRx-Demo-App/src/app/services/api.service.ts": {
+    "path": "D:/Work Place/NgRx-Demo-App/src/app/services/api.service.ts",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "D:/Work Place/NgRx-Demo-App/src/app/services/http.service.ts": {
+    "path": "D:/Work Place/NgRx-Demo-App/src/app/services/http.service.ts",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "D:/Work Place/NgRx-Demo-App/src/app/services/user-list.service.ts": {
+    "path": "D:/Work Place/NgRx-Demo-App/src/app/services/user-list.service.ts",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "D:/Work Place/NgRx-Demo-App/src/app/components/contact-us/contact-us.component.cy.ts": {
+    "path": "D:/Work Place/NgRx-Demo-App/src/app/components/contact-us/contact-us.component.cy.ts",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "D:/Work Place/NgRx-Demo-App/src/app/components/contact-us/contact-us.component.ts": {
+    "path": "D:/Work Place/NgRx-Demo-App/src/app/components/contact-us/contact-us.component.ts",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "D:/Work Place/NgRx-Demo-App/src/app/components/dashboard/dashboard.component.ts": {
+    "path": "D:/Work Place/NgRx-Demo-App/src/app/components/dashboard/dashboard.component.ts",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "D:/Work Place/NgRx-Demo-App/src/app/components/home/home.component.ts": {
+    "path": "D:/Work Place/NgRx-Demo-App/src/app/components/home/home.component.ts",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "D:/Work Place/NgRx-Demo-App/src/app/components/page-not-found-component/page-not-found-component.component.ts": {
+    "path": "D:/Work Place/NgRx-Demo-App/src/app/components/page-not-found-component/page-not-found-component.component.ts",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "D:/Work Place/NgRx-Demo-App/src/app/components/product-list/product-list.component.ts": {
+    "path": "D:/Work Place/NgRx-Demo-App/src/app/components/product-list/product-list.component.ts",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "D:/Work Place/NgRx-Demo-App/src/app/components/user-list/user-list.component.ts": {
+    "path": "D:/Work Place/NgRx-Demo-App/src/app/components/user-list/user-list.component.ts",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "D:/Work Place/NgRx-Demo-App/src/app/ngrx/action/index.ts": {
+    "path": "D:/Work Place/NgRx-Demo-App/src/app/ngrx/action/index.ts",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "D:/Work Place/NgRx-Demo-App/src/app/ngrx/action/user-action.ts": {
+    "path": "D:/Work Place/NgRx-Demo-App/src/app/ngrx/action/user-action.ts",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "D:/Work Place/NgRx-Demo-App/src/app/ngrx/reducer/index.ts": {
+    "path": "D:/Work Place/NgRx-Demo-App/src/app/ngrx/reducer/index.ts",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "D:/Work Place/NgRx-Demo-App/src/app/ngrx/reducer/user-reducer.ts": {
+    "path": "D:/Work Place/NgRx-Demo-App/src/app/ngrx/reducer/user-reducer.ts",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "D:/Work Place/NgRx-Demo-App/src/app/pages/login/login.component.ts": {
+    "path": "D:/Work Place/NgRx-Demo-App/src/app/pages/login/login.component.ts",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "D:/Work Place/NgRx-Demo-App/src/app/pages/logout/logout.component.ts": {
+    "path": "D:/Work Place/NgRx-Demo-App/src/app/pages/logout/logout.component.ts",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  }
+}

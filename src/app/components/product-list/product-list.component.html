@@ -1,0 +1,24 @@
+<div class="row pt-4">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+        <div *ngIf="users.length !== 0">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th class="w-65">Username</th>
+                        <th>Email</th>
+                        <th class="w-20">Phone No.</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let user of users">
+                        <td>{{ user.name }}</td>
+                        <td>{{ user.email }}</td>
+                        <td>{{ user.phone }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="col-md-1"></div>
+</div>

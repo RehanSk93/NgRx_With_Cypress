@@ -1,0 +1,10 @@
+[
+    {
+        "email": "abcd@gmail.com",
+        "expected": "Invalid email format."
+    },
+    {
+        "email": "abcd",
+        "expected": "Invalid email format."
+    }
+]

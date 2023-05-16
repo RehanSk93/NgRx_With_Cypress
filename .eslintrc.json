@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "ignorePatterns": ["projects/**/*"],
+    "parser": "babel-eslint",
+    "overrides": [
+      {
+        "files": ["*.ts"],
+        "extends": [
+          "eslint:recommended",
+          "plugin:@typescript-eslint/recommended",
+          "plugin:@angular-eslint/recommended",
+          "plugin:@angular-eslint/template/process-inline-templates"
+        ],
+        "parser": "@typescript-eslint/parser",
+        "plugins": ["@typescript-eslint"],
+        "rules": {
+          "camelcase": "warn",
+          "no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 0 }],
+          "no-underscore-dangle": "error",
+          "no-restricted-syntax": [
+            "error",
+            {
+              "selector": "ForStatement",
+              "message": "Traditional for loop is not allowed. Use functional or iteration methods instead."
+            }
+          ],
+          "no-warning-comments": [
+            "warn",
+            {
+              "terms": ["todo", "//", ""],
+              "location": "anywhere"
+            }
+          ],    
+          "indent": "warn",
+          "quotes": "warn",
+          "no-console": "warn",
+          "@angular-eslint/directive-selector": [
+            "error",
+            {
+              "type": "attribute",
+              "prefix": "app",
+              "style": "camelCase"
+            }
+          ],
+          "@angular-eslint/component-selector": [
+            "error",
+            {
+              "type": "element",
+              "prefix": "app",
+              "style": "kebab-case"
+            }
+          ]
+        }
+      },
+      {
+        "files": ["*.html"],
+        "extends": ["plugin:@angular-eslint/template/recommended"],
+        "rules": {}
+      }
+    ]
+  }

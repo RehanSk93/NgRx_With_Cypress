@@ -1,0 +1,48 @@
+
+    <div class="row pt-4">
+        <div class="col-md-4" style="padding-top: 7%;">
+
+            <div class="shadow-lg p-4 mb-4 bg-white">
+                <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+                    <div class="form-group">
+                        <label for="name">Username</label>
+                        <input type="text" class="form-control" formControlName="name" autocomplete="off" id="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email address:</label>
+                        <input type="email" class="form-control" formControlName="email" autocomplete="off" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone No:</label>
+                        <input type="text" class="form-control" formControlName="phone" autocomplete="off" id="phone">
+                    </div>
+                    <button type="submit" [disabled]="!userForm.valid" class="btn btn-primary btn-block" *ngIf="!isEdit">Save</button>
+                    <button type="button" class="btn btn-info btn-block" (click)="userUpdatedValue()" *ngIf="isEdit" >Update</button>
+                </form>
+            </div>
+
+        </div>
+        <div class="col-md-8">
+            <div class="col-md-12">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Username</th>
+                            <th>Email</th>
+                            <th>Phone No.</th>
+                            <th colspan="2">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let user of users">
+                            <td>{{ user.name }}</td>
+                            <td>{{ user.email }}</td>
+                            <td>{{ user.phone }}</td>
+                            <td><button type="button" class="btn btn-outline-primary" (click)="editUser(user)" >Edit</button></td>
+                            <td><button type="button" class="btn btn-outline-danger" (click)="deleteUser(user.id)">Delete</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>

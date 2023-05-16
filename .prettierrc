@@ -1,0 +1,18 @@
+{
+    "singleQuote": false,
+    "trailingComma": "all",
+    "arrowParens": "always",
+    "bracketSameLine": true,
+    "comments": false,
+    "printWidth": 80,
+    "bracketSpacing": true,
+    "semi": true,
+    "overrides": [
+      {
+        "files": "*.scss",
+        "options": {
+          "parser": "scss"
+        }
+      }
+    ]
+  }
