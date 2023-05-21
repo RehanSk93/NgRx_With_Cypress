@@ -1,10 +1,9 @@
-[
-    {
-        "email": "abcd@gmail.com",
-        "expected": "Invalid email format."
-    },
-    {
-        "email": "abcd",
-        "expected": "Invalid email format."
-    }
-]
+{
+  "username": "Rehan Sk",
+  "email": "rehan@gmail.com",
+  "comment": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui facere quisquam animi debitis veritatis quas dicta fugiat repellat tempora nostrum!",
+  "password": "123456",
+  "weakPass": "abcd123",
+  "strongPassword": "Abcd@1234",
+  "passLengthCheck": "abcdefgh1234567891234"
+}

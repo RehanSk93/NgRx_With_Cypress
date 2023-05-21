@@ -1,8 +1,9 @@
 {
   "extends": "../tsconfig.json",
-  "include": ["**/*.ts"],
+  "include": ["**/*.ts", "src/**/*.json"],
   "compilerOptions": {
     "sourceMap": false,
-    "types": ["cypress"]
+    "types": ["cypress"],
+    "resolveJsonModule": true
   }
 }

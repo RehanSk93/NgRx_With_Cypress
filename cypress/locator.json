@@ -1,33 +1,15 @@
 {
-    "links": {
-      "loginTab": "login",
-      "userTab": "user",
-      "productTab":"product",
-      "updateUserTab":"update-user"
+    "userFormValidData": {
+     "username": "Rehan Sk",
+     "email": "rehan@gmail.com",
+     "comment": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui facere quisquam animi debitis veritatis quas dicta fugiat repellat tempora nostrum!",
+      "password": "123456"
     },
-    "buttons": {
-      "submitBtn": "Submit",
-      "deleteuser": "DL",
-      "updateuser": "UP",
-      "adduser":"Add"
-    },
-    "titles": {
-      "loginPageTitle": "Login"
-    },
-    "inputfields": {
-      "input1": ":nth-child(1) > .form-control",
-      "input2": ":nth-child(2) > .form-control",
-      "input3": ":nth-child(3) > .form-control",
-      "input4": ":nth-child(4) > .form-control",
-      "selectInput":".filter-select"
-    },
-    "htmlTag": {
-      "cardTag": ".card",
-      "head1Tag":"h1",
-      "spanTag":"span"
-    },
-    "navigation": {
-      "userbtn": "User"
-    }
+    "userFormInvalidData": {
+      "username": "",
+      "email": "rehan@",
+      "comment": "",
+       "password": ""
+     }
   }
   

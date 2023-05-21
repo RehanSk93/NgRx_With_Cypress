@@ -2,9 +2,7 @@
   <div class="col-md-8 mx-auto" style="padding-top: 5%">
     <form [formGroup]="contactUs" (ngSubmit)="onSubmit()">
       <div class="row">
-        <div
-          class="col-md-6"
-          style="border-right: 2px solid rgba(22, 22, 22, 0.473)">
+        <div class="col-md-6">
           <div class="form-group">
             <label for="username">Username</label>
             <input
@@ -12,8 +10,14 @@
               class="form-control"
               autocomplete="off"
               formControlName="username"
-              placeholder="Enter Username"
-              id="username" />
+              placeholder="Enter Username" />
+            <div *ngIf="f.username.dirty || f.username.touched">
+              <div
+                *ngIf="f.username.errors?.required"
+                style="color: rgb(235, 19, 19)">
+                Username is required.
+              </div>
+            </div>
           </div>
           <div class="form-group">
             <label for="email">Email address:</label>
@@ -22,17 +26,14 @@
               class="form-control"
               autocomplete="off"
               formControlName="email"
-              placeholder="Enter email"
-              id="email" />
+              placeholder="Enter email" />
             <div *ngIf="f.email.dirty || f.email.touched">
               <div
-                id="emailRequired"
                 *ngIf="f.email.errors?.required"
                 style="color: rgb(235, 19, 19)">
                 Email is required.
               </div>
               <div
-                id="emailInvalid"
                 *ngIf="f.email.errors?.pattern"
                 style="color: rgb(235, 19, 19)">
                 Invalid email format.
@@ -45,73 +46,88 @@
             <textarea
               class="form-control"
               formControlName="comment"
-              rows="5"
-              id="comment"></textarea>
+              rows="5"></textarea>
           </div>
-          <!-- <div class="checkbox">
-                        <div class="form-check-inline">
-                            <label class="form-check-label">
-                                <input type="checkbox" class="form-check-input" value="">Option 1
-                            </label>
-                        </div>
-                        <div class="form-check-inline">
-                            <label class="form-check-label">
-                                <input type="checkbox" class="form-check-input" value="">Option 2
-                            </label>
-                        </div>
-                        <div class="form-check-inline">
-                            <label class="form-check-label">
-                                <input type="checkbox" class="form-check-input" value="" disabled>Option 3
-                            </label>
-                        </div>
-                    </div> -->
         </div>
 
         <div class="col-md-6">
           <div class="form-group">
             <label for="fruits">Select your favorite fruit:</label>
-            <select class="form-control" id="fruits" formControlName="fruits">
+            <select class="form-control" formControlName="fruits">
               <option *ngFor="let fruit of fruitsList" [value]="fruit.value">
                 {{ fruit.label }}
               </option>
             </select>
           </div>
 
-          <!-- <div class="form-group">
-                        <label for="sel1">Dropdown without "VALUE" attribute</label>
-                        <select class="form-control">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                        </select>
-                    </div> -->
           <div class="form-group">
             <label for="pwd">Password:</label>
             <input
               type="password"
               class="form-control"
               formControlName="password"
-              placeholder="Enter password"
-              id="pwd" />
+              placeholder="Enter password" />
+            <div
+              *ngIf="f.password.dirty || f.password.touched"
+              class="errorText">
+              <div *ngIf="f.password.errors?.required">
+                &#x2022; Password is required.
+              </div>
+              <div *ngIf="f.password.errors?.minlength">
+                &#x2022; Password should be at least 6 characters long.
+              </div>
+              <div *ngIf="f.password.errors?.maxlength">
+                &#x2022; Password should not exceed 15 characters.
+              </div>
+              <div *ngIf="f.password.errors?.pattern">
+                &#x2022; Password should contain at least one uppercase letter
+                and one lowercase letter.
+              </div>
+              <div *ngIf="f.password.errors?.weak">&#x2022; Weak password</div>
+            </div>
+            <div *ngIf="f.password.valid" class="text-success">
+              &#x2022; Strong password
+            </div>
           </div>
-          <!-- <div class="radio-btn">
-                        <div class="form-check">
-                            <label class="form-check-label">
-                                <input type="radio" class="form-check-input" name="optradio">Option 1
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <label class="form-check-label">
-                                <input type="radio" class="form-check-input" name="optradio">Option 2
-                            </label>
-                        </div>
-                        <div class="form-check disabled">
-                            <label class="form-check-label">
-                                <input type="radio" class="form-check-input" name="optradio" disabled>Option 3
-                            </label>
-                        </div>
-                    </div> -->
+
+          <div class="form-check" formArrayName="checkboxes">
+            <label
+              class="form-check-label"
+              style="padding-right: 30px"
+              *ngFor="let checkbox of checkboxArray.controls; let i = index">
+              <input
+                type="checkbox"
+                [formControlName]="i"
+                class="form-check-input"
+                value="" />{{ checkboxLabels[i] }}
+            </label>
+          </div>
+
+          <div class="radio-btn">
+            <label for="gender" style="padding-right: 20px; padding-top: 15px"
+              >Select your gender</label
+            >
+            <div class="form-check-inline">
+              <label class="form-check-label">
+                <input
+                  type="radio"
+                  class="form-check-input"
+                  formControlName="gender"
+                  id="userMale"
+                  value="male" />Male
+              </label>
+            </div>
+            <div class="form-check-inline">
+              <label class="form-check-label">
+                <input
+                  type="radio"
+                  class="form-check-input"
+                  id="userFemale"
+                  formControlName="gender"
+                  value="female" />Female
+              </label>
+            </div>
+          </div>
           <!-- <input type="range" class="form-control-range"> -->
         </div>
         <hr />
