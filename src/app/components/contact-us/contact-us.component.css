@@ -1,3 +1,6 @@
 .errorText div {
     color: rgb(207, 24, 24);
 }
+.isFormValidate {
+    border: 2px solid green;
+}

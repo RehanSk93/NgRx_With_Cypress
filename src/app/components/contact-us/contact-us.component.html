@@ -8,6 +8,7 @@
             <input
               type="text"
               class="form-control"
+              [class.isFormValidate]="f.username.valid"
               autocomplete="off"
               formControlName="username"
               placeholder="Enter Username" />
@@ -24,6 +25,7 @@
             <input
               type="email"
               class="form-control"
+              [class.isFormValidate]="f.email.valid"
               autocomplete="off"
               formControlName="email"
               placeholder="Enter email" />
@@ -45,8 +47,21 @@
             <label for="comment">Comment:</label>
             <textarea
               class="form-control"
+              [class.isFormValidate]="f.comment.valid"
               formControlName="comment"
               rows="5"></textarea>
+            <div *ngIf="f.comment.dirty || f.comment.touched">
+              <div
+                *ngIf="f.comment.errors?.minlength"
+                style="color: rgb(235, 19, 19)">
+                Minimum length should be greter then 16 characters.
+              </div>
+              <div
+                *ngIf="f.comment.errors?.required"
+                style="color: rgb(235, 19, 19)">
+                Comment is required.
+              </div>
+            </div>
           </div>
         </div>
 
@@ -65,6 +80,7 @@
             <input
               type="password"
               class="form-control"
+              [class.isFormValidate]="f.password.valid"
               formControlName="password"
               placeholder="Enter password" />
             <div
